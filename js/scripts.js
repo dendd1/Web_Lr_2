@@ -12,4 +12,4 @@
       {
       document.getElementById('window_auth').style.display = state;  
       document.getElementById('gray').style.display = state;    
-      }
+      } 
