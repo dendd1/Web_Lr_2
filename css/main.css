@@ -20,14 +20,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Container */
 .container {
-	width: 100%;
-	max-width: 1200px;
+	width: 1200px;
 	margin: 0 auto;
 }
 
 
 /*Intro */
-.intro {
+.main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -49,7 +48,6 @@ h1, h2, h3, h4, h5, h6 {
 	top: 40px;
 	left: 0;
 	right: 0;
-	z-index: 1;
 }
 
 
@@ -170,68 +168,3 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: white;
 	color: black;
 }
-
-
-
-/*Window and Form and Input and Radio and other*/
-#window_reg {
-	display: none;
-	width: 350px;
-	height: 580px;
-	margin: 40px auto;
-	background-color: white;
-	border: 1px solid white;
-	border-radius: 15px;
-	z-index: 150;
-}
-
-#window_auth {
-	display: none;
-	width: 350px;
-	height: 300px;
-	margin: 40px auto;
-	background-color: white;
-	border: 1px solid white;
-	border-radius: 15px;
-	z-index: 150;
-}
-
-#gray {
-	display: none;
-	background-color: rgba(1, 1, 1, 0.75);
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: 100;
-}
-
-.form{
-	width: 275px;
-	margin: -15px auto 20px auto;
-	text-align: center;
-}
-
-.input {
-	width: 265px;
-	padding: 5px;
-	margin-bottom: 10px;
-}
-
-.radio {
-	margin-bottom: 10px;
-}
-
-.close {
-	margin: 10px 0 0 320px;
-	cursor: pointer;
-	border: 1px solid #ccc;
-	padding: 2px;
-	background: #ccc;
-}
-
-.close:hover {
-	background: #fff;
-}
-
