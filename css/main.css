@@ -1,180 +1,73 @@
-body {
+* {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-	color: 000;
-	font-size: 15px;
-	line-height: 1.6;
-}
-
-*,
-*:before,
-:after {
-	box-sizing: border-box;
+	color: #fff;
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-	position: relative;
-	color: black;
-}
 
-/*Container */
+
+/* ----------------------------Общее------------------ */
 .container {
-	width: 1200px;
-	margin: 0 auto;
+	width: 1600px;
+	margin: 0;
 }
 
+.box{
+	width: 800px;
+	margin: 0px;
+}
 
-/*Intro */
-.main {
+.small_text{
+
+}
+
+.middle_text{
+
+}
+
+.large_text{
+
+}
+
+/* ----------------------------main------------------ */
+
+.main{
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-	width: 100%;
+}
+.bg_main{
+	width: 99vw;
 	height: 100vh;
-
-	background: url('../img/background.jpg') center
-	no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
+	position:absolute;
 }
 
-
-/* Header */
-.header {
-	widows: 100%;
-	padding-top: 0px;
-	position: absolute;
-	top: 40px;
-	left: 0;
-	right: 0;
+.content_maim{
+	position: relative;
+	display: flex;
 }
 
-
-.header_inner {
+.list_main{
+	width: 600px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 }
 
-.header_logo {
-	font-size: 30px;
-	font-weight: 700;
-	color: white;
+.list_main img {
+	height: 360px;
+	width: 180px;
+	border-radius: 20px;
 }
 
-
-.logo_text {
-	font-size: 30px;
-	font-weight: 700;
-	position: relative;
-}
-
-/* Nav */
-.nav {
-	font-size: 16px;
-	text-transform: uppercase;
+.container.main{
+	margin-top: 500px;
 }
 
 
-.nav_link {
-	display: inline-block;
-	vertical-align: top;
-	margin: 0 15px;
-	position: relative;
-	color: white;
-	text-decoration: none;
-
-	transition: color .1s linear;
-}
-
-/*baton*/
+/* ----------------------------Header------------------ */
 
 
-.btn {
-	display: inline-block;
-	vertical-align: top;
-	padding: 8px 30px;
-
-	border: 3px solid black;
-
-	font-size: 14px;
-	font-weight: 700;
-	border-color: white;
-	color: white;
-	text-transform: uppercase;
-	text-decoration: none;
-
-	transition: background .1s linear,
-	color .1s linear;
-	border-radius: 30px;
-}
-
-
-.btn:hover {
-	background-color: white;
-	color: black;
-}
-
-
-.btn_reg {
-	display: inline-block;
-	vertical-align: top;
-	padding: 8px 30px;
-
-	border: 3px solid black;
-	font-size: 14px;
-	font-weight: 700;
-	border-color: white;
-	color: white;
-	background-color: rgba(1, 1, 1, 0);
-	text-transform: uppercase;
-	text-decoration: none;
-
-	transition: background .1s linear,
-	color .1s linear;
-	border-radius: 30px;
-}
-
-
-.btn_reg:hover {
-	background-color: white;
-	color: black;
-}
-
-
-/*search*/
-
-.search {
-	opacity: .4;
-	display: inline-block;
-	vertical-align: top;
-	padding: 8px 30px;
-	width: 50%;
-	border: 3px solid black;
-
-	font-size: 14px;
-	font-weight: 700;
-	border-color: white;
-	color: black;
-	background-color: white;
-	text-transform: uppercase;
-
-
-	border-radius: 40px;
-}
-.search:hover {
-	opacity: 1;
-	background-color: white;
-	color: black;
-}
-
-
-
-
-/* Каталог */
-
-
+/*-------------------------- Каталог------------------------- */
 .section_catalog {
 	padding: 80px 0;
 	width: 100%;
@@ -202,16 +95,11 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-
-
-
-
 .section_suptitle {
 
 	font-size: 14px;
 	color: white;
 }
-
 
 .section_title {
 	/*font-family: 'Anton';*/
@@ -220,11 +108,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: white;
 	text-transform: uppercase;
 }
-
-
-
-
-
 
 /*Above*/
 .about {
