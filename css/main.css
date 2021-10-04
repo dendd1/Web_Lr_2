@@ -20,14 +20,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Container */
 .container {
-	width: 100%;
-	max-width: 1200px;
+	width: 1200px;
 	margin: 0 auto;
 }
 
 
 /*Intro */
-.intro {
+.main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -49,7 +48,6 @@ h1, h2, h3, h4, h5, h6 {
 	top: 40px;
 	left: 0;
 	right: 0;
-	z-index: 1;
 }
 
 
@@ -173,65 +171,122 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/*Window and Form and Input and Radio and other*/
-#window_reg {
-	display: none;
-	width: 350px;
-	height: 580px;
-	margin: 40px auto;
-	background-color: white;
-	border: 1px solid white;
-	border-radius: 15px;
-	z-index: 150;
+
+/* Каталог */
+
+
+.section_catalog {
+	padding: 80px 0;
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
 }
 
-#window_auth {
-	display: none;
-	width: 350px;
-	height: 300px;
-	margin: 40px auto;
-	background-color: white;
-	border: 1px solid white;
-	border-radius: 15px;
-	z-index: 150;
+.section_black {
+	background-color: #141111;
 }
 
-#gray {
-	display: none;
-	background-color: rgba(1, 1, 1, 0.75);
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: 100;
+.section {
+	padding: 80px 0;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-.form{
-	width: 275px;
-	margin: -15px auto 20px auto;
+.section_header {
+	width: 100%;
+	max-width: 950px;
+	margin: 0 auto 50px;
+
+
 	text-align: center;
 }
 
-.input {
-	width: 265px;
-	padding: 5px;
-	margin-bottom: 10px;
+
+
+
+
+.section_suptitle {
+
+	font-size: 14px;
+	color: white;
 }
 
-.radio {
-	margin-bottom: 10px;
+
+.section_title {
+	/*font-family: 'Anton';*/
+	font-size: 30px;
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
 }
 
-.close {
-	margin: 10px 0 0 320px;
-	cursor: pointer;
-	border: 1px solid #ccc;
-	padding: 2px;
-	background: #ccc;
+
+
+
+
+
+/*Above*/
+.about {
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-between;
 }
 
-.close:hover {
-	background: #fff;
+
+.btn_main {
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px 30px;
+	border: 3px solid black;
+	font-size: 14px;
+	font-weight: 700;
+	border-color: white;
+	color: white;
+	background-color: rgba(1, 1, 1, 0);
+	text-transform: uppercase;
+
+	transition: background .1s linear,
+	color .1s linear;
+	border-radius: 30px;
+}
+
+
+.btn_main:hover {
+	background-color: white;
+	color: black;
+}
+
+.about_item {
+	border: 3px solid white;
+	width: 300px;
+	height: 570px;
+	display: inline-block;
+	border-color: white;
+	background-color: black;
+	border-radius: 30px;
+  	overflow: hidden;
+}
+
+.about_item:hover .about_img {
+	transform: translate3d(-10px, -10px, 0);
+}
+
+
+
+
+.img_about {
+	width: 300px;
+  	height: 510px;
+
+}
+
+
+.about_text {
+	font-size: 14px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
 }
 
