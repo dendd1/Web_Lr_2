@@ -5,34 +5,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--   <meta name="viewport" content="width=1200"> -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 
   <title>Shamy</title>
 
 </head>
 <body>
-  <!--  ------Header----------------- -->
+    <!--  ------Header----------------- -->
+
     <!--  ------main----------------- -->
     <section>
       <div class="main">
         <div class="container content_main">
-          <div class="box">
-            <p>хиты недели</p>
+          <div class="box content_main">
+            <p></p>
           </div>
-          <div class="box">
-            <p>хиты недели</p>
-            <div class="list_main">
-              <img src="img/posters/poster_1.jpg" alt="">
-              <img src="img/posters/poster_1.jpg" alt="">
-              <img src="img/posters/poster_1.jpg" alt="">
+          <div class="box content_main">
+            <div class="link_main">
+              <a href="#"><p class="small_text rotate_text text_main">хиты недели</p></a>
             </div>
-            <div>
-
+            <div class="content_main posters_main">
+              <!--  ------Постер----------------- -->
+              <div class="item container_main">    
+                <img class="item_img" src="img/posters/poster_1.jpg" alt="">
+                <button class="item_btn poster_btn" >Отзыв</button>
+                <div class="item_mask main_mask">
+                  <div class="item_text film_name_main">
+                    Человек-паук 
+                  </div>
+                  <div class="item_text stat_main">
+                    Лайк-Коммент-Просмотр 
+                  </div>
+                </div>
+              </div>
+              <!--  ------Постер----------------- -->
+              <div class="item container_main">    
+                <img class="item_img" src="img/posters/poster_1.jpg" alt="">
+                <button class="item_btn poster_btn" >Отзыв</button>
+                <div class="item_mask main_mask">
+                  <div class="item_text film_name_main">
+                    Человек-паук 
+                  </div>
+                  <div class="item_text stat_main">
+                    Лайк-Коммент-Просмотр 
+                  </div>
+                </div>
+              </div>
+              <!--  ------Постер----------------- -->
+              <div class="item container_main">    
+                <img class="item_img" src="img/posters/poster_1.jpg" alt="">
+                <button class="item_btn poster_btn" >Отзыв</button>
+                <div class="item_mask main_mask">
+                  <div class="item_text film_name_main">
+                    Человек-паук 
+                  </div>
+                  <div class="item_text stat_main">
+                    Лайк-Коммент-Просмотр 
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
@@ -42,167 +77,152 @@
     <!-- ------------------Каталог-------------- -->
     <div class="section_black">
     <section class="section_catalog">
-
+              <!-- Шапка каталога -->
             <div class="section_header">
-      
               <h3  class="section_suptitle">все самое лучшше для вас</h3>
-      
               <h2 class="section_title">Каталог фильмов</h2>
-                <button class="btn_main" >Рекомендации</button>
-                <button class="btn_main" >Самое обсуждаемое</button>
-                <button class="btn_main" >Лучшее</button>
-                <button class="btn_main" >Новинки</button>
+                <button id="catalog_btn_1" class="item_btn catalog_btn catalog_btn_active" >Рекомендации</button>
+                <button id="catalog_btn_2" class="item_btn catalog_btn" >Самое обсуждаемое</button>
+                <button id="catalog_btn_3" class="item_btn catalog_btn" >Лучшее</button>
+                <button id="catalog_btn_4" class="item_btn catalog_btn" >Новинки</button>
             </div>
-                     
             <div class="about">
               <!-- Первый постер -->
-              <div class="about_item">    
-                  <img class="img_about" src="img/posters/poster_1.jpg" alt="">
-                  <button class="btn_about" >Отзыв</button>
-                  <div class="about_mask">
-                    <div class="about_text">
+              <div class="item catalog_container">    
+                  <img class="item_img" src="img/posters/poster_1.jpg" alt="">
+                  <button class="item_btn poster_btn" >Отзыв</button>
+                  <div class="item_mask catalog_mask">
+                    <div class="item_text film_name">
                       Человек-паук 
                     </div>
-                    <div class="about_text ico">
+                    <div class="item_text stat">
                       Лайк-Коммент-Просмотр 
                     </div>
                   </div>
               </div>
               <!-- Второй постер -->
-              <div class="about_item">    
-                <img class="img_about" src="img/posters/poster_2.jpg" alt="">
-                <button class="btn_about" >Отзыв</button>
-                <div class="about_mask">
-                  <div class="about_text">
+              <div class="item catalog_container">    
+                <img class="item_img"src="img/posters/poster_2.jpg" alt="">
+                <button class="item_btn poster_btn">Отзыв</button>
+                <div class="item_mask catalog_mask">
+                  <div class="item_text film_name">
                     Живая сталь 
                   </div>
-                  <div class="about_text ico">
+                  <div class="item_text stat ">
                     Лайк-Коммент-Просмотр 
                   </div>
                 </div>
               </div>
               <!-- Третий постер -->
-              <div class="about_item">    
-                <img class="img_about" src="img/posters/poster_3.jpg" alt="">
-                <button class="btn_about" >Отзыв</button>
-                <div class="about_mask">
-                  <div class="about_text">
+              <div class="item catalog_container">    
+                <img class="item_img"src="img/posters/poster_3.jpg" alt="">
+                <button class="item_btn poster_btn">Отзыв</button>
+                <div class="item_mask catalog_mask">
+                  <div class="item_text film_name">
                     Пираты карибского моря
                   </div>
-                  <div class="about_text ico">
+                  <div class="item_text stat">
                     Лайк-Коммент-Просмотр 
                   </div>
                 </div>
               </div>
               <!-- Четвертый постер -->
-              <div class="about_item">
-      
-                <img class="img_about" src="img/posters/poster_4.jpg" alt="">
-                <button class="btn_about" >Отзыв</button>
-                <div class="about_mask">
-                  <div class="about_text">
+              <div class="item catalog_container">
+                <img class="item_img poster_btn"src="img/posters/poster_4.jpg" alt="">
+                <button class="item_btn">Отзыв</button>
+                <div class="item_mask catalog_mask">
+                  <div class="item_text film_name">
                     Близнецы 
                   </div>
-                  <div class="about_text ico">
+                  <div class="item_text stat">
                     Лайк-Коммент-Просмотр 
                   </div>
                 </div>
               </div>
               <!-- Пятый постер -->
-              <div class="about_item">
-      
-                <img class="img_about" src="img/posters/poster_5.jpg" alt="">
-                <button class="btn_about" >Отзыв</button>
-                <div class="about_mask">
-                  <div class="about_text">
+              <div class="item catalog_container">
+                <img class="item_img"src="img/posters/poster_5.jpg" alt="">
+                <button class="item_btn poster_btn">Отзыв</button>
+                <div class="item_mask catalog_mask">
+                  <div class="item_text film_name">
                     1 + 1 
                   </div>
-                  <div class="about_text ico">
+                  <div class="item_text stat">
                     Лайк-Коммент-Просмотр 
                   </div>
                 </div>
               </div>
-               
             </div>
-
-
-
-
             <div class="about">
-              <!-- Первый постер -->
-              <div class="about_item">    
-                  <img class="img_about" src="img/posters/poster_1.jpg" alt="">
-                  <button class="btn_about" >Отзыв</button>
-                  <div class="about_mask">
-                    <div class="about_text">
-                      Человек-паук 
-                    </div>
-                    <div class="about_text ico">
-                      Лайк-Коммент-Просмотр 
-                    </div>
-                  </div>
-              </div>
-              <!-- Второй постер -->
-              <div class="about_item">    
-                <img class="img_about" src="img/posters/poster_2.jpg" alt="">
-                <button class="btn_about" >Отзыв</button>
-                <div class="about_mask">
-                  <div class="about_text">
-                    Живая сталь 
-                  </div>
-                  <div class="about_text ico">
-                    Лайк-Коммент-Просмотр 
-                  </div>
+             <!-- Первый постер -->
+             <div class="item catalog_container">    
+              <img class="item_img" src="img/posters/poster_1.jpg" alt="">
+              <button class="item_btn poster_btn" >Отзыв</button>
+              <div class="item_mask catalog_mask">
+                <div class="item_text film_name">
+                  Человек-паук 
+                </div>
+                <div class="item_text stat">
+                  Лайк-Коммент-Просмотр 
                 </div>
               </div>
-              <!-- Третий постер -->
-              <div class="about_item">    
-                <img class="img_about" src="img/posters/poster_3.jpg" alt="">
-                <button class="btn_about" >Отзыв</button>
-                <div class="about_mask">
-                  <div class="about_text">
-                    Пираты карибского моря
-                  </div>
-                  <div class="about_text ico">
-                    Лайк-Коммент-Просмотр 
-                  </div>
-                </div>
+          </div>
+          <!-- Второй постер -->
+          <div class="item catalog_container">    
+            <img class="item_img"src="img/posters/poster_2.jpg" alt="">
+            <button class="item_btn poster_btn">Отзыв</button>
+            <div class="item_mask catalog_mask">
+              <div class="item_text film_name">
+                Живая сталь 
               </div>
-              <!-- Четвертый постер -->
-              <div class="about_item">
-      
-                <img class="img_about" src="img/posters/poster_4.jpg" alt="">
-                <button class="btn_about" >Отзыв</button>
-                <div class="about_mask">
-                  <div class="about_text">
-                    Близнецы 
-                  </div>
-                  <div class="about_text ico">
-                    Лайк-Коммент-Просмотр 
-                  </div>
-                </div>
+              <div class="item_text stat ">
+                Лайк-Коммент-Просмотр 
               </div>
-              <!-- Пятый постер -->
-              <div class="about_item">
-      
-                <img class="img_about" src="img/posters/poster_5.jpg" alt="">
-                <button class="btn_about" >Отзыв</button>
-                <div class="about_mask">
-                  <div class="about_text">
-                    1 + 1 
-                  </div>
-                  <div class="about_text ico">
-                    Лайк-Коммент-Просмотр 
-                  </div>
-                </div>
+            </div>
+          </div>
+          <!-- Третий постер -->
+          <div class="item catalog_container">    
+            <img class="item_img"src="img/posters/poster_3.jpg" alt="">
+            <button class="item_btn poster_btn">Отзыв</button>
+            <div class="item_mask catalog_mask">
+              <div class="item_text film_name">
+                Пираты карибского моря
               </div>
-               
-            </div>     
-
+              <div class="item_text stat">
+                Лайк-Коммент-Просмотр 
+              </div>
+            </div>
+          </div>
+          <!-- Четвертый постер -->
+          <div class="item catalog_container">
+            <img class="item_img"src="img/posters/poster_4.jpg" alt="">
+            <button class="item_btn poster_btn">Отзыв</button>
+            <div class="item_mask catalog_mask">
+              <div class="item_text film_name">
+                Близнецы 
+              </div>
+              <div class="item_text stat">
+                Лайк-Коммент-Просмотр 
+              </div>
+            </div>
+          </div>
+          <!-- Пятый постер -->
+          <div class="item catalog_container">
+            <img class="item_img"src="img/posters/poster_5.jpg" alt="">
+            <button class="item_btn poster_btn">Отзыв</button>
+            <div class="item_mask catalog_mask">
+              <div class="item_text film_name">
+                1 + 1 
+              </div>
+              <div class="item_text stat">
+                Лайк-Коммент-Просмотр 
+              </div>
+            </div>
+            </div>
+            </div>    
     </section>
-  </div>
 
-  <!-- Рекомендации -->
+  <!---------------------- Рекомендации -------------------------->
   <div class="section_black">
     <section class="section_our_choise">
       <div class="section_header">
@@ -212,23 +232,18 @@
 
       
       <div class="gallery-block">
-        <div style="width: 50%;">
+        <div class="box">
            <img class="img_recomend_big" src="img/posters/poster_recomend_1.jpg">
            <img class="img_recomend_small" src="img/posters/poster_recomend_4.jpg">
         </div>
-        <div style="width: 50%;">
+        <div class="box">
            <img class="img_recomend_small" src="img/posters/poster_recomend_3.jpg">
            <img class="img_recomend_big" src="img/posters/poster_recomend_2.jpg">
         </div>
      </div>
-
     </section>
-  </div>
-
     <!--  ------Интерактивыне элементы----------------- -->
-    <form action="">
-
-
+    <script src="js/scripts.js"></script>
 </body>
 </html>
 
