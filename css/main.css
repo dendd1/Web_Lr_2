@@ -15,9 +15,23 @@ a {
 	text-decoration: none;
 }
 
+body{
+	background: #141111;
+}
+
+body section{
+	justify-content: center;
+	display: flex;
+}
+
+section{
+	padding: 80px 0;
+}
+
 /* ----------------------------Общее------------------------ */
 .container {
 	width: 1600px;
+
 }
 
 .box{
@@ -29,7 +43,7 @@ a {
 }
 
 .middle_text{
-
+	font-size: 30px;
 }
 
 .large_text{
@@ -123,6 +137,7 @@ a {
 	display: flex;
 	justify-content: center;
 	height: 100vh;
+	width: 100vw;
 }
 
 .content_main{
@@ -174,17 +189,6 @@ a {
 
 
 /*-------------------------- Каталог------------------------- */
-.section_catalog {
-	padding: 80px 0;
-	width: 100%;
-	max-width: 1600px;
-	margin: 0 auto;
-}
-
-.section_black {
-	background-color: #141111;
-}
-
 .section {
 	padding: 80px 0;
 	width: 100%;
@@ -201,19 +205,7 @@ a {
 	text-align: center;
 }
 
-.section_suptitle {
 
-	font-size: 14px;
-	color: white;
-}
-
-.section_title {
-	/*font-family: 'Anton';*/
-	font-size: 30px;
-	font-weight: 700;
-	color: white;
-	text-transform: uppercase;
-}
 
 /*Above*/
 .about {
@@ -270,48 +262,31 @@ a {
 
 /*---------------------------- Наш выбор -------------------------------*/
 
-.section_our_choise {
-	padding: 80px 0;
-	width: 100%;
-	max-width: 1600px;
-	margin: 0 auto;
-}
 .gallery-block {
 	display: flex;
   }
-
-.img_recomend_big {
-	
-	width:99%;
-	height: 450px;
-	background-color: black;
-  	overflow: hidden;
-	position: relative;
-}
-.img_recomend_big:hover {
-	height: 444px;
-	border: 3px solid white;
-	border-radius: 30px;
-	border-color: orange;
-}
-
-.img_recomend_small {
-	width:99%;
+.gallery_content_box_small{
 	height: 225px;
-	background-color: black;
-  	overflow: hidden;
-	position: relative;
 }
 
-.img_recomend_small:hover {
-	height: 219px;
-	border: 3px solid white;
+.gallery_content_box_big{
+	height: 450px;
+}
+
+.gallery_content_box_small ,
+.gallery_content_box_big {
+	padding: 10px;
+}
+
+.gallery_content_box_small img,
+.gallery_content_box_big img{
+	width: 100%;
+	height: 100%;
 	border-radius: 30px;
-	border-color: orange;
+	border: 3px solid transparent;
 }
 
-
-
-
-.gallery-block div {overflow:hidden;margin:8px}
-.gallery-block div img {display:inline-block;margin:8px 0}
+.gallery_content_box_small img:hover ,
+.gallery_content_box_big img:hover {
+	border: 3px solid orange;
+}
