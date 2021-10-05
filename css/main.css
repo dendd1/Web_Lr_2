@@ -4,12 +4,15 @@
 	color: #fff;
 }
 
+html{
+	width: 100%;
+}
 
 
 
 /* ----------------------------Общее------------------ */
 .container {
-	width: 1600px;
+	max-width: 1600px;
 	margin: 0;
 }
 
@@ -33,17 +36,14 @@
 /* ----------------------------main------------------ */
 
 .main{
+	background: url(../img/bg_posters/BG2.jpg) no-repeat;
+	background-size: cover;
 	display: flex;
 	justify-content: center;
-}
-.bg_main{
-	width: 99vw;
 	height: 100vh;
-	position:absolute;
 }
 
-.content_maim{
-	position: relative;
+.content_main{
 	display: flex;
 }
 
@@ -59,11 +59,9 @@
 	border-radius: 20px;
 }
 
-.container.main{
+.container.content_main{
 	margin-top: 500px;
 }
-
-
 /* ----------------------------Header------------------ */
 
 
