@@ -152,7 +152,9 @@ html{
 	position: relative;
 }
 
-
+.about_item:hover {
+	border-color: orange;
+}
 
 
 
@@ -164,16 +166,27 @@ html{
 
 
 
-.img_about {
+ .img_about{
 	width: 300px;
   	height: 510px;
 
 }
+/*
+.img_about:hover{
+	width: 300px;
+  	height: 510px;
 
-.img_about:hover {
+} */
+.about_item:hover > .img_about {
+	background-color: orange;
+	opacity: .5;
+}
+
+
+/* .img_about:hover {
 	background-color: orange;
 	opacity: .5;	
-}
+} */
 
 .about_item:hover .btn_about {
 	display: inline-block;
@@ -223,7 +236,7 @@ html{
 	border: 3px solid black;
 	font-size: 14px;
 	font-weight: 700;
-	border-color: white;
+	border-color: orange;
 	color: white;
 	background-color: rgba(1, 1, 1, 0);
 	text-transform: uppercase;
@@ -239,7 +252,7 @@ html{
 
 
 .btn_about:hover {
-	background-color: white;
+	background-color: orange;
 	color: black;
 }
 
@@ -261,5 +274,39 @@ html{
 .gallery-block {
 	display: flex;
   }
-.gallery-block div {overflow:hidden;margin:4px}
-.gallery-block div img {display:inline-block;margin:2px 0}
+
+.img_recomend_big {
+	
+	width:99%;
+	height: 450px;
+	background-color: black;
+  	overflow: hidden;
+	position: relative;
+}
+.img_recomend_big:hover {
+	height: 444px;
+	border: 3px solid white;
+	border-radius: 30px;
+	border-color: orange;
+}
+
+.img_recomend_small {
+	width:99%;
+	height: 225px;
+	background-color: black;
+  	overflow: hidden;
+	position: relative;
+}
+
+.img_recomend_small:hover {
+	height: 219px;
+	border: 3px solid white;
+	border-radius: 30px;
+	border-color: orange;
+}
+
+
+
+
+.gallery-block div {overflow:hidden;margin:8px}
+.gallery-block div img {display:inline-block;margin:8px 0}
