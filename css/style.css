@@ -107,6 +107,7 @@ input{
 	text-align: center;
 }
 
+
 .item_text{
 	position: absolute;
 	text-align: center;
@@ -125,6 +126,8 @@ input{
 	color .1s linear;
 	border-radius: 30px;
 	position: absolute;
+	
+
 }
 
 .item_btn:hover {
@@ -138,6 +141,7 @@ input{
 }
 
 .poster_btn{
-	left: 26%;
+	left: 50%;
+	transform: translate(-50%, 0);
 	bottom: 50%;
 }

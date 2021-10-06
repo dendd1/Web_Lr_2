@@ -109,7 +109,7 @@
 }
 
 .catalog_container{
-	width: 270px;
+	width: 300px;
 	height: 510px;
 }
 
@@ -161,10 +161,38 @@
   }
 .gallery_content_box_small{
 	height: 225px;
+	position: relative;
 }
 
 .gallery_content_box_big{
 	height: 450px;
+	position: relative;
+}
+
+.item_mask_recomend {
+	width: 100%;
+	bottom: 0px;
+	position: absolute;
+	text-align: center;
+}
+
+.item_text.film_name_recomend {
+	bottom: 70px;
+    left: 5%;
+	width: auto;
+	font-size: 36px;
+}
+
+.item_text.stat_recomend {
+	bottom: 40px;
+    left: 5%;
+	width: auto;
+
+}
+.item_btn.poster_btn_recomend {
+	left: 85%;
+    transform: translate(-50%, 0);
+    bottom: 10%;
 }
 
 .gallery_content_box_small ,
@@ -179,7 +207,13 @@
 	border-radius: 30px;
 	border: 3px solid transparent;
 }
-.gallery_content_box_small img:hover ,
-.gallery_content_box_big img:hover {
+.gallery_content_box_small:hover .img_recomend,
+.gallery_content_box_big:hover .img_recomend{
 	border: 3px solid orange;
+	border-radius: 30px;
 }
+
+.gallery_content_box_big:hover .item_btn,
+.gallery_content_box_small:hover .item_btn{
+	display: inline-block;
+} 
