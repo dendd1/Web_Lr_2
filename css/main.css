@@ -1,134 +1,3 @@
-* {
-	margin: 0;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 16px;
-}
-
-html{
-	width: 100%;
-}
-
-a {
-	text-decoration: none;
-}
-
-body{
-	background: #141111;
-}
-
-body section{
-	justify-content: center;
-	display: flex;
-}
-
-section{
-	padding: 80px 0;
-}
-
-/* ----------------------------Общее------------------------ */
-.container {
-	width: 1600px;
-
-}
-
-.box{
-	width: 50%;
-}
-
-.small_text{
-	font-size: 16px;
-}
-
-.middle_text{
-	font-size: 30px;
-}
-
-.large_text{
-
-}
-
-.rotate_text{
-	writing-mode:vertical-rl;
-	transform:scale(-1);
-}
-
-
-.item {
-	border: 3px solid white;
-	display: inline-block;
-	border-color: white;
-	background-color: black;
-	border-radius: 5%;
-  	overflow: hidden;
-	position: relative;
-}
-
-.item:hover {
-	border-color: orange;
-}
-
- .item_img{
-	width: 100%;
-  	height: 100%;
-
-}
-.item:hover > .item_img {
-	background-color: orange;
-	opacity: .5;
-}
-
-.item:hover .item_btn {
-	display: inline-block;
-}
-
-.item_mask {
-	width: 100%;
-	background-image: linear-gradient(rgb(0, 0, 0, 0), 
-	rgba(0, 0, 0), rgba(0, 0, 0));
-	bottom: 0px;
-	position: absolute;
-	text-align: center;
-}
-
-.item_text{
-	position: absolute;
-	text-align: center;
-	width: 100%;
-}
-
-.item_btn {
-	display: none;
-	vertical-align: top;
-	padding: 8px 30px;
-	border: 3px solid orange;
-	background-color: orange;
-	color: black;
-
-	transition:.1s linear,
-	color .1s linear;
-	border-radius: 30px;
-	position: absolute;
-	transform: translate(-50%, 0);
-}
-
-.item_btn:hover {
-	background-color: white;
-	border-color: white;
-}
-
-.item_btn:hover .item_img {
-	background-color: orange;
-	opacity: .8;
-}
-
-.poster_btn{
-	left: 50%;
-	bottom: 50%;
-}
-
 /* ----------------------------main----------------------- */
 
 .main{
@@ -186,7 +55,34 @@ section{
 }
 
 /* ----------------------------Header------------------ */
+.header{
+	display: flex;
+	justify-content: space-between;
+	
+}
 
+.header_img{
+	margin: 0px 40px;
+}
+.header_btn{
+	display: inline;
+	position: relative;
+	transform: 0;
+	background-color: transparent;
+	color: white;
+	border-color: white;
+}
+
+.header_section{
+	z-index: 2;
+	background: gray;
+	opacity:1;
+	margin: 0;
+}
+
+.header_btn:hover{
+	color:black;
+}
 
 /*-------------------------- Каталог------------------------- */
 .section {
@@ -200,8 +96,6 @@ section{
 	width: 100%;
 	max-width: 950px;
 	margin: 0 auto 50px;
-
-
 	text-align: center;
 }
 
@@ -232,7 +126,7 @@ section{
 }
 
 .item_btn.catalog_btn {
-	display: inline-block;
+	display: inline;
 	border-radius: 0;
 	border-color: transparent;
 	color: white;
@@ -285,7 +179,6 @@ section{
 	border-radius: 30px;
 	border: 3px solid transparent;
 }
-
 .gallery_content_box_small img:hover ,
 .gallery_content_box_big img:hover {
 	border: 3px solid orange;
