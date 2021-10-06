@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--   <meta name="viewport" content="width=1200"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_accaunt.css">
+    <link rel="stylesheet" href="css/main_accaunt.css">
+      <title>Shamy</title> 
+    </head>
+<body>
+    <section>
+        <header>
+
+        </header>
+    </section>
+    <section>
+        <div class="container">
+            <div class="box_info">
+                <ul>
+                    <li><p id="accaunt" class="middle_text active">Профиль</p></li>
+                    <li><p id="more_info" class="middle_text">Личные данные</p></li>
+                    <li><p class="middle_text">Избранное</p></li>
+                    <li><p class="middle_text">библеотека</p></li>
+                    <li><p class="middle_text">Выход</p></li>
+                </ul>
+            </div>
+            <div class="box_content">
+                <div id="accaunt_content" class="box accaunt" style="display:flex">
+                    <img class="accaunt_avatar_img" src="img/avatars/squidward.jpg" alt="">
+                    <p class="large_text accaunt_name accaunt_text">Admin Admin</p>
+                    <p class="small_text accaunt_text">Краткая информация</p>
+                    <div class="accaunt_container_info">
+                        <div class="accaunt_container_info_box">
+                            <p class="large_text accaunt_text">
+                                7
+                            </p>
+                            <p class="middle_text accaunt_text">
+                                обзоров
+                            </p>
+                        </div>
+                        <div class="accaunt_container_info_box">
+                            <p class="large_text accaunt_text">
+                                14
+                            </p>
+                            <p class="middle_text accaunt_text">
+                                отзывов <br> оставлено
+                            </p>
+                        </div>
+                        <div class="accaunt_container_info_box">
+                            <p class="large_text accaunt_text">
+                                8
+                            </p>
+                            <p class="middle_text accaunt_text">
+                                Комментариев <br> написано
+                            </p>
+                        </div>
+                        <div class="accaunt_container_info_box">
+                            <p class="large_text accaunt_text">
+                                12
+                            </p>
+                            <p class="middle_text accaunt_text">
+                                лайков
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="more_info_content" class="box info" style="display:none">
+                    <div class="info_text info_box">
+                        <p class="large_text">ЛИЧНЫЕ ДАННЫЕ</p>
+                        <!-- Никнейм -->
+                        <div class="info_text_box">
+                            <p class="small_text">Никнейм</p>
+                            <p class="middle_text gray_text">Admin Admin</p>
+                        </div>
+                        <!-- Почта -->
+                        <div class="info_text_box">
+                            <p class="small_text">Почта</p>
+                            <p class="middle_text gray_text">Admin__best@admin.com</p>
+                        </div>
+                        <!-- Пароль -->
+                        <p class="large_text" style="margin-top: 60px;">Смена пароля</p>
+                        <!-- Текущий пароль -->
+                        <div class="info_text_box">
+                            <p class="small_text">Текущий пароль</p>
+                            <input class="info_input middle_text" type="text">
+                        </div>
+                        <!-- Новый пароль -->
+                        <div class="info_text_box">
+                            <p class="small_text">Новый пароль</p>
+                            <input class="info_input middle_text" type="text">
+                        </div>
+                        <button class="info_btn">сохранить</button>
+                    </div>
+                    <div class="info_img info_box">
+                        <img class="info_avatar_img" src="img/avatars/squidward.jpg" alt="">
+                        <a href="#"><p class="large_text info_text_img">Сменить атавар</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/scripts_account.js"></script>
+</body>
+</html>
