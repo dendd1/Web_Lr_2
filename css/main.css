@@ -9,6 +9,16 @@
 	width: 100vw;
 	
 }
+body::-webkit-scrollbar {
+  width: 6px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #141111;        /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: gray;    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+}
 
 .main_mask {
 	width: 100%;
@@ -116,6 +126,7 @@
 
 /*Above*/
 .about {
+	overflow-x: auto;
 	margin-top: 80px;
 	display: flex;
 	justify-content: space-between;
@@ -227,6 +238,8 @@
 .img_recomend {
 	transition:.2s linear,
 	color .2s linear;
+	opacity: .75;
+	background-color: orange;
 }
 .gallery_content_box_small:hover .img_recomend,
 .gallery_content_box_big:hover .img_recomend{
@@ -262,14 +275,18 @@
 	text-align: justify;
 }
 
-.third_box > img{
+.third_box > .blog_img{
 	border: 3px solid transparent;
 }
 
-.third_box:hover > img{
+.third_box:hover > .blog_img{
 	border: 3px solid orange;
 }
 
 .third_box:hover > p{
 	color: orange;
+}
+
+.reaction_blog {
+	top: 10px;
 }

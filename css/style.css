@@ -1,11 +1,18 @@
+@font-face{
+
+	font-family: TTMilks;
+	src: url(../font/TTMilks-Bold.ttf);
+}
 * {
+
 	margin: 0;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'TTMilks';
 	font-weight: 600;
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 16px;
 }
+
 
 html{
 	width: 100%;
