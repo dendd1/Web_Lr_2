@@ -238,3 +238,26 @@
 .gallery_content_box_small:hover .item_btn{
 	display: inline-block;
 } 
+
+/* ---------------------Блог------------------- */
+
+.blog_theme_text{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.blog_box{
+	display: flex;
+	justify-content: space-between;
+}
+
+.blog_img{
+	width: 480px;
+	height: 240px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.blog_text{
+	text-align: justify;
+}

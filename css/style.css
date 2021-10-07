@@ -119,6 +119,10 @@ input{
 	width: 50%;
 }
 
+.third_box{
+	width: 30%;
+}
+
 .small_text{
 	font-size: 16px;
 }
