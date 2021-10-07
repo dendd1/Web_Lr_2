@@ -261,3 +261,15 @@
 .blog_text{
 	text-align: justify;
 }
+
+.third_box > img{
+	border: 3px solid transparent;
+}
+
+.third_box:hover > img{
+	border: 3px solid orange;
+}
+
+.third_box:hover > p{
+	color: orange;
+}
