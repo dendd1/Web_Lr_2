@@ -1,21 +1,24 @@
 var accaunt_btn_1 = document.getElementById('accaunt');
 var accaunt_btn_2 = document.getElementById('more_info');
+var accaunt_btn_3 = document.getElementById('library_btn');
 
-accaunt_btn_1.onclick = change_info_active_btn_1;
-accaunt_btn_2.onclick = change_info_active_btn_2;
+var active_btn = 'accaunt';
+var active_sect = 'accaunt_content';
 
-function change_info_active_btn_1()
+var flex = "flex";
+var inline = "inline";
+
+function change_info_active_btn(doc, stat, nv_sect, nv_btn)
 {
-      document.getElementById('accaunt').classList.add('active');
-      document.getElementById('accaunt_content').style.display = "flex";
-      document.getElementById('more_info').classList.remove('active');
-      document.getElementById('more_info_content').style.display = "none"; 
+      document.getElementById(active_btn).classList.remove('active');
+      document.getElementById(active_sect).style.display = "none";
+      doc.classList.add('active');
+      document.getElementById(nv_sect).style.display = stat;
+      active_btn = nv_btn;
+      active_sect = nv_sect;
 }
-          
-function change_info_active_btn_2()
-{
-      document.getElementById('accaunt').classList.remove('active');
-      document.getElementById('accaunt_content').style.display = "none";
-      document.getElementById('more_info').classList.add('active');
-      document.getElementById('more_info_content').style.display = "flex";  
-}
+
+
+accaunt_btn_1.onclick = function(){ change_info_active_btn(accaunt_btn_1, flex, "accaunt_content", "accaunt");};
+accaunt_btn_2.onclick = function(){ change_info_active_btn(accaunt_btn_2, flex, "more_info_content", "more_info");};
+accaunt_btn_3.onclick = function(){ change_info_active_btn(accaunt_btn_3, inline, "library", "library_btn");};

@@ -24,12 +24,13 @@
                 <ul>
                     <li><p id="accaunt" class="middle_text active">Профиль</p></li>
                     <li><p id="more_info" class="middle_text">Личные данные</p></li>
-                    <li><p class="middle_text">Избранное</p></li>
+                    <li><p id="library_btn" class="middle_text">Избранное</p></li>
                     <li><p class="middle_text">библеотека</p></li>
                     <li><p class="middle_text">Выход</p></li>
                 </ul>
             </div>
             <div class="box_content">
+                <!-- Кнопка профиль -->
                 <div id="accaunt_content" class="box accaunt" style="display:flex">
                     <img class="accaunt_avatar_img" src="img/avatars/squidward.jpg" alt="">
                     <p class="large_text accaunt_name accaunt_text">Admin Admin</p>
@@ -69,6 +70,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Кнопка Личные данные -->
                 <div id="more_info_content" class="box info" style="display:none">
                     <div class="info_text info_box">
                         <p class="large_text">ЛИЧНЫЕ ДАННЫЕ</p>
@@ -86,19 +88,41 @@
                         <p class="large_text" style="margin-top: 60px;">Смена пароля</p>
                         <!-- Текущий пароль -->
                         <div class="info_text_box">
-                            <p class="small_text">Текущий пароль</p>
-                            <input class="info_input middle_text" type="text">
+                            <input class="info_input middle_text" placeholder="Текущий пароль" type="text">
                         </div>
                         <!-- Новый пароль -->
                         <div class="info_text_box">
-                            <p class="small_text">Новый пароль</p>
-                            <input class="info_input middle_text" type="text">
+                            <input class="info_input middle_text" placeholder="Новый пароль" type="text">
                         </div>
                         <button class="info_btn">сохранить</button>
                     </div>
                     <div class="info_img info_box">
                         <img class="info_avatar_img" src="img/avatars/squidward.jpg" alt="">
                         <a href="#"><p class="large_text info_text_img">Сменить атавар</p></a>
+                    </div>
+                </div>
+                <!-- Кнопка Избранное -->
+                <div id="library"  class="library" style="display:none">
+                    <!-- Обзор 1 -->
+                    <div class="library_content_place">
+                        <img class="library_poster" src="img/posters/poster_main_2.jpg" alt="">
+                        <div class="library_content_place_text">
+                            <p class="library_content_place_name_text large_text">Рик и Морти</p>
+                            <p class="library_text middle_text">Краткий обзор :</p>
+                            <p class="roboto library_text review gray_text">Сюжет сериала рассказывает о приключениях во вселенной деда Рика и его внука Морти. Рик - гениальный ученый, изобретатель, алкоголик и реалист. Морти - обычный ничем не отличающийся от других подростков мальчик. Особо не отличается большим умом от своих сверстников.</p>
+                            <p class="library_text middle_text">Автор :</p>
+                            <a href="#"><p class="roboto library_text review gray_text">ЛУКАС ФИЛЛИПС</p></a>
+                        </div>
+                    </div>
+                    <div class="library_content_place">
+                        <img class="library_poster" src="img/posters/poster_main_2.jpg" alt="">
+                        <div class="library_content_place_text">
+                            <p class="library_content_place_name_text large_text">Рик и Морти</p>
+                            <p class="library_text middle_text">Краткий обзор :</p>
+                            <p class="roboto library_text review gray_text">Сюжет сериала рассказывает о приключениях во вселенной деда Рика и его внука Морти. Рик - гениальный ученый, изобретатель, алкоголик и реалист. Морти - обычный ничем не отличающийся от других подростков мальчик. Особо не отличается большим умом от своих сверстников.</p>
+                            <p class="library_text middle_text">Автор :</p>
+                            <a href="#"><p class="roboto library_text review gray_text">ЛУКАС ФИЛЛИПС</p></a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -88,3 +88,50 @@
 .info_img a{
     margin-top: 30px;
 }
+
+/*-------------------library------------------ */
+
+.library{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.library_content_place{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 18px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.library_poster{
+    margin-left: 10px;
+    padding: 12px 8px;
+    border-radius: 30px;
+    width: 240px;
+    height: 360px;
+}
+
+.library_content_place_text{
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.library_content_place_name_text{
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3e3d3d;
+}
+
+.library_text{
+    margin-top: 30px;
+}
+
+.review{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: justify;
+    text-transform: none;
+}
