@@ -294,8 +294,27 @@ body::-webkit-scrollbar-thumb {
 	top: 10px;
 }
 
+.blog_btn{
+	display: flex;
+	justify-content: center;
+}
+
+.blog_btn a{
+	padding: 10px 8px;
+	background: orange;
+	border-radius: 13px;
+}
+
+.blog_btn p{
+	color: #141111;
+}
+
+.blog_btn a:hover{
+	background: white;
+}
 
 
+/* --------------Адаптация---------- */
 @media screen and (max-width: 1200px){
 	.gallery-block {
 		display: inline;
