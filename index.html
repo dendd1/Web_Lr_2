@@ -9,8 +9,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/super_style.css">
+<link rel="stylesheet" href="css/lightslider.css"/>
 
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/lightslider.js"></script>
   <title>Shamy</title>
 
 </head>
@@ -144,7 +147,7 @@
     <!-- ------------------Второй слайд-------------- -->
   
     <section>
-      <div class="container">
+      <div class="container_for_micro">
           <!-- Шапка каталога -->
           <div class="section_header">
             <h3  class="small_text">все самое лучшше для вас</h3>
@@ -154,9 +157,11 @@
               <button id="catalog_btn_3" class="item_btn catalog_btn" >Лучшее</button>
               <button id="catalog_btn_4" class="item_btn catalog_btn" >Новинки</button>
           </div>
-          <div class="about">
-            <!-- Первый постер -->
-            <div class="item catalog_container">   
+          <div class="container_for_scroll">
+          <ul id="scroll" class="cs-hidden">
+            <li >
+
+              <div class="item catalog_container">   
                 <img class="item_img" src="img/posters/poster_1.jpg" alt="">
                 <button class="item_btn poster_btn" >Отзыв</button> 
                 <div class="item_mask catalog_mask">
@@ -173,174 +178,189 @@
                   </div>
                 </div>
             </div>
-            <!-- Второй постер -->
-            <div class="item catalog_container">    
-              <img class="item_img"src="img/posters/poster_2.jpg" alt="">
-              <button class="item_btn poster_btn">Отзыв</button>
-              <div class="item_mask catalog_mask">
-                <div class="item_text film_name">
-                  <p class="text_big">Живая сталь</p>
-                </div>
-                <div class="item_text stat ">
-                  <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
-                  <p class="text_big">10</p>
-                  <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
-                  <p class="text_big">10</p>
-                  <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
-                  <p class="text_big">10</p> 
-                </div>
-              </div>
-            </div>
-            <!-- Третий постер -->
-            <div class="item catalog_container">    
-              <img class="item_img"src="img/posters/poster_3.jpg" alt="">
-              <button class="item_btn poster_btn">Отзыв</button>
-              <div class="item_mask catalog_mask">
-                <div class="item_text film_name">
-                  <p class="text_big">Пираты карибского моря</p>
-                </div>
-                <div class="item_text stat">
-                  <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
-                  <p class="text_big">10</p>
+
+            </li>
+            <li >
+
+              <div class="item catalog_container">    
+                <img class="item_img"src="img/posters/poster_2.jpg" alt="">
+                <button class="item_btn poster_btn">Отзыв</button>
+                <div class="item_mask catalog_mask">
+                  <div class="item_text film_name">
+                    <p class="text_big">Живая сталь</p>
+                  </div>
+                  <div class="item_text stat ">
+                    <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
+                    <p class="text_big">10</p>
                     <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
                     <p class="text_big">10</p>
                     <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
                     <p class="text_big">10</p> 
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Четвертый постер -->
-            <div class="item catalog_container">
-              <img class="item_img"src="img/posters/poster_4.jpg" alt="">
-              <button class="item_btn poster_btn">Отзыв</button>
-              <div class="item_mask catalog_mask">
-                <div class="item_text film_name">
-                  <p class="text_big">Близнецы</p>
-                </div>
-                <div class="item_text stat">
-                  <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
-                  <p class="text_big">10</p>
-                    <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
+
+            </li>
+            <li >
+
+              <div class="item catalog_container">    
+                <img class="item_img"src="img/posters/poster_3.jpg" alt="">
+                <button class="item_btn poster_btn">Отзыв</button>
+                <div class="item_mask catalog_mask">
+                  <div class="item_text film_name">
+                    <p class="text_big">Пираты карибского моря</p>
+                  </div>
+                  <div class="item_text stat">
+                    <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
                     <p class="text_big">10</p>
-                    <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
-                    <p class="text_big">10</p>  
+                      <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
+                      <p class="text_big">10</p>
+                      <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
+                      <p class="text_big">10</p> 
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Пятый постер -->
-            <div class="item catalog_container">
-              <img class="item_img"src="img/posters/poster_5.jpg" alt="">
-              <button class="item_btn poster_btn">Отзыв</button>
-              <div class="item_mask catalog_mask">
-                <div class="item_text film_name">
-                  <p class="text_big">1 + 1</p>
+
+            </li>
+            <li >
+
+              <div class="item catalog_container">
+                <img class="item_img"src="img/posters/poster_4.jpg" alt="">
+                <button class="item_btn poster_btn">Отзыв</button>
+                <div class="item_mask catalog_mask">
+                  <div class="item_text film_name">
+                    <p class="text_big">Близнецы</p>
+                  </div>
+                  <div class="item_text stat">
+                    <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
+                    <p class="text_big">10</p>
+                      <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
+                      <p class="text_big">10</p>
+                      <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
+                      <p class="text_big">10</p>  
+                  </div>
                 </div>
-                <div class="item_text stat">
-                  <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
-                  <p class="text_big">10</p>
+              </div>
+
+            </li>
+            <li >
+
+              <div class="item catalog_container">
+                <img class="item_img"src="img/posters/poster_5.jpg" alt="">
+                <button class="item_btn poster_btn">Отзыв</button>
+                <div class="item_mask catalog_mask">
+                  <div class="item_text film_name">
+                    <p class="text_big">1 + 1</p>
+                  </div>
+                  <div class="item_text stat">
+                    <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
+                    <p class="text_big">10</p>
+                      <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
+                      <p class="text_big">10</p>
+                      <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
+                      <p class="text_big">10</p> 
+                  </div>
+                </div>
+              </div>
+
+            </li>
+            <li class=".item_scroll">
+              <div class="item catalog_container">    
+                <img class="item_img" src="img/posters/poster_6.jpg" alt="">
+                <button class="item_btn poster_btn" >Отзыв</button>
+                <div class="item_mask catalog_mask">
+                  <div class="item_text film_name">
+                    <p class="text_big">Брюс всемогущий</p>
+                  </div>
+                  <div class="item_text stat">
+                    <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
+                    <p class="text_big">10</p>
                     <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
                     <p class="text_big">10</p>
                     <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
                     <p class="text_big">10</p> 
+                  </div>
+                </div>
+            </div>
+            </li>
+            <li class=".item_scroll">
+              <div class="item catalog_container">    
+                <img class="item_img"src="img/posters/poster_7.jpg" alt="">
+                <button class="item_btn poster_btn">Отзыв</button>
+                <div class="item_mask catalog_mask">
+                  <div class="item_text film_name">
+                    <p class="text_big">Упдд</p>
+                  </div>
+                  <div class="item_text stat ">
+                    <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
+                    <p class="text_big">10</p>
+                      <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
+                      <p class="text_big">10</p>
+                      <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
+                      <p class="text_big">10</p> 
+                  </div>
                 </div>
               </div>
-            </div>
-
-
-            <!-- Первый постер -->
-            <div class="item catalog_container">    
-              <img class="item_img" src="img/posters/poster_6.jpg" alt="">
-              <button class="item_btn poster_btn" >Отзыв</button>
-              <div class="item_mask catalog_mask">
-                <div class="item_text film_name">
-                  <p class="text_big">Брюс всемогущий</p>
+            </li>
+            <li class=".item_scroll">
+              <div class="item catalog_container">    
+                <img class="item_img"src="img/posters/poster_8.jpg" alt="">
+                <button class="item_btn poster_btn">Отзыв</button>
+                <div class="item_mask catalog_mask">
+                  <div class="item_text film_name">
+                    <p class="text_big">Телохранитель киллера</p>
+                  </div>
+                  <div class="item_text stat">
+                    <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
+                    <p class="text_big">10</p>
+                      <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
+                      <p class="text_big">10</p>
+                      <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
+                      <p class="text_big">10</p> 
+                  </div>
                 </div>
-                <div class="item_text stat">
-                  <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
-                  <p class="text_big">10</p>
-                  <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
-                  <p class="text_big">10</p>
-                  <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
-                  <p class="text_big">10</p> 
+              </div>
+            </li>
+            <li class=".item_scroll">
+              <div class="item catalog_container">
+                <img class="item_img"src="img/posters/poster_9.jpg" alt="">
+                <button class="item_btn poster_btn">Отзыв</button>
+                <div class="item_mask catalog_mask">
+                  <div class="item_text film_name">
+                    <p class="text_big">Маска</p>
+                  </div>
+                  <div class="item_text stat">
+                    <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
+                    <p class="text_big">10</p>
+                      <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
+                      <p class="text_big">10</p>
+                      <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
+                      <p class="text_big">10</p>  
+                  </div>
                 </div>
               </div>
-          </div>
-          <!-- Второй постер -->
-          <div class="item catalog_container">    
-            <img class="item_img"src="img/posters/poster_7.jpg" alt="">
-            <button class="item_btn poster_btn">Отзыв</button>
-            <div class="item_mask catalog_mask">
-              <div class="item_text film_name">
-                <p class="text_big">Упдд</p>
+            </li>
+            <li class=".item_scroll">
+              <div class="item catalog_container">
+                <img class="item_img"src="img/posters/poster_10.jpg" alt="">
+                <button class="item_btn poster_btn">Отзыв</button>
+                <div class="item_mask catalog_mask">
+                  <div class="item_text film_name">
+                    <p class="text_big">Дом большой мамочки</p>
+                  </div>
+                  <div class="item_text stat">
+                    <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
+                    <p class="text_big">10</p>
+                      <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
+                      <p class="text_big">10</p>
+                      <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
+                      <p class="text_big">10</p> 
+                  </div>
+                </div>
               </div>
-              <div class="item_text stat ">
-                <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
-                <p class="text_big">10</p>
-                  <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
-                  <p class="text_big">10</p>
-                  <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
-                  <p class="text_big">10</p> 
-              </div>
-            </div>
-          </div>
-          <!-- Третий постер -->
-          <div class="item catalog_container">    
-            <img class="item_img"src="img/posters/poster_8.jpg" alt="">
-            <button class="item_btn poster_btn">Отзыв</button>
-            <div class="item_mask catalog_mask">
-              <div class="item_text film_name">
-                <p class="text_big">Телохранитель киллера</p>
-              </div>
-              <div class="item_text stat">
-                <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
-                <p class="text_big">10</p>
-                  <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
-                  <p class="text_big">10</p>
-                  <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
-                  <p class="text_big">10</p> 
-              </div>
-            </div>
-          </div>
-          <!-- Четвертый постер -->
-          <div class="item catalog_container">
-            <img class="item_img"src="img/posters/poster_9.jpg" alt="">
-            <button class="item_btn poster_btn">Отзыв</button>
-            <div class="item_mask catalog_mask">
-              <div class="item_text film_name">
-                <p class="text_big">Маска</p>
-              </div>
-              <div class="item_text stat">
-                <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
-                <p class="text_big">10</p>
-                  <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
-                  <p class="text_big">10</p>
-                  <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
-                  <p class="text_big">10</p>  
-              </div>
-            </div>
-          </div>
-          <!-- Пятый постер -->
-          <div class="item catalog_container">
-            <img class="item_img"src="img/posters/poster_10.jpg" alt="">
-            <button class="item_btn poster_btn">Отзыв</button>
-            <div class="item_mask catalog_mask">
-              <div class="item_text film_name">
-                <p class="text_big">Дом большой мамочки</p>
-              </div>
-              <div class="item_text stat">
-                <img class="picture_catalog" src="img/interaction/heart.svg" alt="">
-                <p class="text_big">10</p>
-                  <img class="picture_catalog" src="img/interaction/comment.svg" alt="">
-                  <p class="text_big">10</p>
-                  <img class="picture_catalog" src="img/interaction/eye.svg" alt="">
-                  <p class="text_big">10</p> 
-              </div>
-            </div>
-          </div>
-
-
-          </div>
-
+            </li>
+          </ul>
+        </div>
               
       </div>
     </section>
@@ -354,7 +374,7 @@
         <div class="gallery-block">
           <div class="box">
 
-
+            
 
             <div class="gallery_content_box_big">
               
@@ -368,11 +388,11 @@
                   Пиксели
                 </div>
                 <div class="item_text stat_recomend">
-                  <img class="picture_recomend" src="img/interaction/heart.svg" alt="">
+                  <img class="picture_recomend_last" src="img/interaction/heart.svg" alt="">
                     <p class="text_very_but_not_big">10</p>
-                    <img class="picture_recomend" src="img/interaction/comment.svg" alt="">
+                    <img class="picture_recomend_last" src="img/interaction/comment.svg" alt="">
                     <p class="text_very_but_not_big">10</p>
-                    <img class="picture_recomend" src="img/interaction/eye.svg" alt="">
+                    <img class="picture_recomend_last" src="img/interaction/eye.svg" alt="">
                     <p class="text_very_but_not_big">10</p> 
                 </div>
 
@@ -392,11 +412,11 @@
                   Неудержимые
                 </div>
                 <div class="item_text stat_recomend">
-                  <img class="picture_recomend" src="img/interaction/heart.svg" alt="">
+                  <img class="picture_recomend_last" src="img/interaction/heart.svg" alt="">
                   <p class="text_very_but_not_big">10</p>
-                    <img class="picture_recomend" src="img/interaction/comment.svg" alt="">
+                    <img class="picture_recomend_last" src="img/interaction/comment.svg" alt="">
                     <p class="text_very_but_not_big">10</p>
-                    <img class="picture_recomend" src="img/interaction/eye.svg" alt="">
+                    <img class="picture_recomend_last" src="img/interaction/eye.svg" alt="">
                     <p class="text_very_but_not_big">10</p> 
                 </div>
 
@@ -414,11 +434,11 @@
                   Дедпул
                 </div>
                 <div class="item_text stat_recomend">
-                  <img class="picture_recomend" src="img/interaction/heart.svg" alt="">
+                  <img class="picture_recomend_last" src="img/interaction/heart.svg" alt="">
                   <p class="text_very_but_not_big">10</p>
-                    <img class="picture_recomend" src="img/interaction/comment.svg" alt="">
+                    <img class="picture_recomend_last" src="img/interaction/comment.svg" alt="">
                     <p class="text_very_but_not_big">10</p>
-                    <img class="picture_recomend" src="img/interaction/eye.svg" alt="">
+                    <img class="picture_recomend_last" src="img/interaction/eye.svg" alt="">
                     <p class="text_very_but_not_big">10</p> 
                 </div>
 
@@ -434,11 +454,11 @@
                   Плохие парни навсегда
                 </div>
                 <div class="item_text stat_recomend">
-                  <img class="picture_recomend" src="img/interaction/heart.svg" alt="">
+                  <img class="picture_recomend_last" src="img/interaction/heart.svg" alt="">
                   <p class="text_very_but_not_big">10</p>
-                    <img class="picture_recomend" src="img/interaction/comment.svg" alt="">
+                    <img class="picture_recomend_last" src="img/interaction/comment.svg" alt="">
                     <p class="text_very_but_not_big">10</p>
-                    <img class="picture_recomend" src="img/interaction/eye.svg" alt="">
+                    <img class="picture_recomend_last" src="img/interaction/eye.svg" alt="">
                     <p class="text_very_but_not_big">10</p>
                 </div>
 
@@ -502,7 +522,7 @@
         </div>
       </section>
       <!-- ------------------Четвертый слайд-------------- -->
-      <!--  ------Интерактивыне элементы----------------- -->
+      
       <script src="js/scripts.js"></script>
       </div>
 </body>

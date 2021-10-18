@@ -49,3 +49,17 @@ function show_auth(state)
       document.getElementById('window_auth_reg').style.display = state;	
       document.getElementById('gray_mask').style.display = state; 		
 }
+
+
+
+jQuery(document).ready(function($) {
+      $('#scroll').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+            } 
+        }); 
+        
+});
+

@@ -417,14 +417,11 @@ body::-webkit-scrollbar {
 .item_btn.catalog_btn.catalog_btn_active:hover{
 	color: white;
 }
-.about {
-	width: 100%;
-	height: 520px;
-	overflow: auto;
-	margin-top: 80px;
-	/* display: flex; */
-	justify-content: space-between;
-	left: 50%;
+.container_for_micro{
+	width: 1600px;
+}
+.container_for_scroll {
+	width: 1580px;
 }
 /* Рамка карточки каталога */
 .catalog_container{
@@ -525,6 +522,10 @@ body::-webkit-scrollbar {
 .text_very_but_not_big{
 	font-size: 38px;
 }
+.picture_recomend_last{
+	width: 32px;
+	height: 32px;
+}
 /* ------------Третий слайд------------------- */
 
 
@@ -538,7 +539,7 @@ body::-webkit-scrollbar {
 	justify-content: space-between;
 }
 .third_box{
-	width: 30%;
+	width: 480px;
 }
 .blog_img{
 	width: 480px;
@@ -587,12 +588,216 @@ body::-webkit-scrollbar {
 /* ------------Четвертый слайд------------------- */
 
 /* --------------------Адаптив------------------------- */
-@media screen and (max-width: 1200px){
-	.gallery-block {
-		display: inline;
+
+@media (max-width: 1600px) {
+	.container_for_scroll {
+		width: 1260px;
 	}
-	.box {
-		width: 100%;
-		margin: 0;
+	.container_for_micro {
+		width: 1200px;
+	}
+	.gallery-block{
+		display: block;
+	}
+	.gallery_content_box_small .img_recomend,
+	.gallery_content_box_big .img_recomend,
+	.item_mask_recomend, .gallery_content_box_big .img_recomend,
+	.gallery_content_box_big, .gallery_content_box_small{
+		width: 800px;
+	}
+	.gallery-block{
+		margin-left: 20%;
+	}
+	
+}
+
+
+
+@media (max-width: 1430px) {
+	.container_for_micro {
+		width: 1250px;
+	}
+}
+
+@media (max-width: 1260px) {
+	.container_for_scroll {
+		width: 945px;
+	}
+	.container_for_micro {
+		width: 915px;
+	}
+	.gallery-block{
+		margin-left: 15%;
+	}
+}
+
+
+@media (max-width: 1040px) {
+	.container_for_scroll {
+		width: 630px;
+	}
+	.container_for_micro {
+		width: 625px;
+	}
+	.gallery-block{
+		margin-left: 10%;
+	}
+}
+
+@media (max-width: 980px) {
+	.gallery-block{
+		margin-left: 7%;
+	}
+}
+@media (max-width: 905px) {
+	.gallery-block{
+		margin-left: 3%;
+	}
+}
+@media (max-width: 845px) {
+	.gallery-block{
+		margin-left: 0%;
+	}
+}
+@media (max-width: 800px) {
+	.gallery_content_box_small .img_recomend,
+	.gallery_content_box_big .img_recomend,
+	.item_mask_recomend, .gallery_content_box_big,
+	.gallery_content_box_small{
+		width: 650px;
+	}
+	.gallery_content_box_big .img_recomend,
+	.gallery_content_box_big{
+		height: 350px;
+	}
+	.gallery_content_box_small .img_recomend,
+	.gallery_content_box_small{
+		height: 125px;
+	}
+
+
+	.gallery-block{
+		margin-left: 5%;
+	}
+}
+
+@media (max-width: 720px) {
+	.gallery-block{
+		margin-left: 3%;
+	}
+}
+@media (max-width: 695px) {
+	.gallery-block{
+		margin-left: 1%;
+	}
+}
+
+@media (max-width: 665px) {
+	.gallery-block{
+		margin-left: 0%;
+	}
+}
+@media (max-width: 650px) {
+	.item_text.film_name_recomend{
+		font-size: 28px;
+	}
+	.text_very_but_not_big{
+		font-size: 20px;
+	}
+	.picture_recomend_last{
+		width: 20px;
+		height: 20px;
+	}
+	.gallery_content_box_small .img_recomend,
+	.gallery_content_box_big .img_recomend,
+	.item_mask_recomend, .gallery_content_box_big,
+	.gallery_content_box_small{
+		width: 500px;
+	}
+	.gallery_content_box_big .img_recomend,
+	.gallery_content_box_big{
+		height: 250px;
+	}
+	.gallery_content_box_small .img_recomend,
+	.gallery_content_box_small{
+		height: 95px;
+	}
+	.gallery-block{
+		margin-left: 5%;
+	}
+}
+@media (max-width: 625px) {
+	.container_for_scroll {
+		width: 310px;
+	}
+	.container_for_micro {
+		width: 305px;
+	}
+}
+
+@media (max-width: 570px) {
+	.gallery-block{
+		margin-left: 3%;
+	}
+}
+
+@media (max-width: 535px) {
+	.gallery-block{
+		margin-left: 0%;
+	}
+}
+
+
+@media (max-width: 505px) {
+	.item_text.film_name_recomend{
+		font-size: 20px;
+	}
+	.text_very_but_not_big{
+		font-size: 15px;
+	}
+	.picture_recomend_last{
+		width: 18px;
+		height: 18px;
+	}
+	.gallery_content_box_small .img_recomend,
+	.gallery_content_box_big .img_recomend,
+	.item_mask_recomend, .gallery_content_box_big,
+	.gallery_content_box_small{
+		width: 300px;
+	}
+	.gallery_content_box_big .img_recomend,
+	.gallery_content_box_big{
+		height: 150px;
+	}
+	.gallery_content_box_small .img_recomend,
+	.gallery_content_box_small{
+		height: 75px;
+	}
+	.gallery-block{
+		margin-left: 15%;
+	}
+	.item_text.film_name_recomend{
+		bottom: 40px;
+	}
+	.item_btn.poster_btn_recomend{
+		left: 75%;
+		bottom: 40%;
+	}
+}
+@media (max-width: 450px) {
+	.gallery-block{
+		margin-left: 10%;
+	}
+}
+
+@media (max-width: 370px) {
+	.gallery-block{
+		margin-left: 5%;
+	}
+}
+
+@media (max-width: 335px) {
+	.gallery-block{
+		margin-left: 0%;
 	}
 }
