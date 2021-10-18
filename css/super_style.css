@@ -227,7 +227,23 @@ body::-webkit-scrollbar {
 #window_reg_auth {
 	display: none;
 	width: 350px;
-	height: 580px;
+	height: 550px;
+	margin: 40px auto;
+	background: 141111;
+	border: 2px solid orange;
+	border-radius: 15px;
+	z-index: 10001;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 15%;
+	bottom: 0;
+	background: #141111;
+}
+#window_auth_reg {
+	display: none;
+	width: 350px;
+	height: 250px;
 	margin: 40px auto;
 	background: 141111;
 	border: 2px solid orange;
@@ -295,7 +311,12 @@ body::-webkit-scrollbar {
 	background: white;
 	border-color: orange;
 }
-
+.second_choise{
+	color: gray;
+}
+.second_choise:hover{
+	color: orange
+}
 /* ------------Форма регистрации/входа------------------- */
 
 
@@ -360,10 +381,8 @@ body::-webkit-scrollbar {
 .main_mask {
 	width: 100%;
 	background-image: linear-gradient(rgb(20, 17,17, 0),
-	rgb(20, 17,17, 0.2), rgb(20, 17,17, 0.4),
-	rgb(20, 17,17, 0.5), rgb(20, 17,17, 0.6),
-	rgb(20, 17,17, 0.7), rgb(20, 17,17, 0.7),
-	rgb(20, 17,17, 0.8), rgb(20, 17,17, 0.9),
+	rgb(20, 17,17, 0.4), rgb(20, 17,17, 0.6), rgb(20, 17,17, 0.8),	
+	rgb(20, 17,17), rgb(20, 17,17),
 	rgba(20, 17,17), rgba(20, 17,17));
 	top: 88%;
 	position: absolute;

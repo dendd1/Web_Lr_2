@@ -43,3 +43,9 @@ function show(state)
       document.getElementById('window_reg_auth').style.display = state;	
       document.getElementById('gray_mask').style.display = state; 		
 }
+
+function show_auth(state)
+{
+      document.getElementById('window_auth_reg').style.display = state;	
+      document.getElementById('gray_mask').style.display = state; 		
+}

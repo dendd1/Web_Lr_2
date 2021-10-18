@@ -31,13 +31,13 @@
       </div>
     </header>
     <!--  ------Header----------------- -->
-    <div id="gray_mask" onclick="scripts.js/show('none')"></div>
+    <div id="gray_mask" onclick="scripts.js/show('none'), scripts.js/show_auth('none')"></div>
     <!-- --------Форма регистрации/входа------- -->
     <div id="window_reg_auth">
       <img  class="close" src="img/interaction/close.png" alt="" onclick="scripts.js/show('none')">
       <div class="form_reg_auth">
-          <a href="#">Вход</a>
-        <h2 class="hed_r_a">Регистрация</h2>
+          <a class="second_choise" href="#" onclick="scripts.js/show('none'), scripts.js/show_auth('block')">Вход</a>
+        <h2 class="hed_r_a">&#8594;Регистрация &#8592;</h2>
         <form action="index.html" name="f1">
           <input type="text" placeholder="Имя" name="name1" class="input_r_a">
           <input type="text" placeholder="Фамилия" name="name2" class="input_r_a">
@@ -47,30 +47,24 @@
           <input type="password" placeholder="Подтвердите пароль" name="pass2" class="input_r_a">
           <input type='tel' placeholder="Мобильный телефон" name="tel" class="input_r_a">
           <input type="radio" checked name="radio1"> Мужчина <input type="radio" name="radio1" class="radio"> Женщина
-          <button class="btn_reg"> Регистрация </button>
+          <button class="btn_reg"> Зарегестрироваться </button>
           <p><input type="checkbox" name="a" value=""> Соглашение на обработку личных данных</p>
         </form>
       </div>
     </div>
-    <!-- <div id="window_auth_reg">
-      <img  class="close" src="img/interaction/close.png" alt="" onclick="scripts.js/show('none')">
+    <div id="window_auth_reg">
+      <img  class="close" src="img/interaction/close.png" alt="" onclick="scripts.js/show_auth('none')">
       <div class="form_reg_auth">
-          <a href="#">Вход</a>
-        <h2 class="hed_r_a">Регистрация</h2>
+          <a class="second_choise" href="#" onclick=" scripts.js/show_auth('none'), scripts.js/show('block')">Регистрация</a>
+        <h2 class="hed_r_a">&#8594;Вход &#8592;</h2>
         <form action="index.html" name="f1">
-          <input type="text" placeholder="Имя" name="name1" class="input_r_a">
-          <input type="text" placeholder="Фамилия" name="name2" class="input_r_a">
           <input type="email" placeholder="Почта" name="email1" class="input_r_a">
-          <input type="email" placeholder="Подтвердите почту" name="email2" class="input_r_a">
+
           <input type="password" placeholder="Пароль" name="pass1" class="input_r_a">
-          <input type="password" placeholder="Подтвердите пароль" name="pass2" class="input_r_a">
-          <input type='tel' placeholder="Мобильный телефон" name="tel" class="input_r_a">
-          <input type="radio" checked name="radio1"> Мужчина <input type="radio" name="radio1" class="radio"> Женщина
-          <button class="btn_reg"> Регистрация </button>
-          <p><input type="checkbox" name="a" value=""> Соглашение на обработку личных данных</p>
+          <button class="btn_reg"> Войти </button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- --------Форма регистрации/входа------- -->
     <!--  ------Первый слайд----------------- -->
     <section>
