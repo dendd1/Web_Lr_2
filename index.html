@@ -23,15 +23,56 @@
             <img class="logo_img" src="img/interaction/logo.png" alt="">
             <button class="btn_header" >Каталог фильмов</button> 
             <input class="header_input" value="" >
-            <button class="btn_header" >Войти</button> 
+            <button onclick="scripts.js/show('block')" class="btn_header" >Войти</button> 
             <button class="btn_header" >Контакты</button> 
             <img class="header_picture" src="img/interaction/comment.svg" alt="">
             <img class="header_picture" src="img/interaction/heart.svg" alt="">
         </div>
       </div>
     </header>
-  
-    <!--  ------main----------------- -->
+    <!--  ------Header----------------- -->
+    <div id="gray_mask" onclick="scripts.js/show('none')"></div>
+    <!-- --------Форма регистрации/входа------- -->
+    <div id="window_reg_auth">
+      <img  class="close" src="img/interaction/close.png" alt="" onclick="scripts.js/show('none')">
+      <div class="form_reg_auth">
+          <a href="#">Вход</a>
+        <h2 class="hed_r_a">Регистрация</h2>
+        <form action="index.html" name="f1">
+          <input type="text" placeholder="Имя" name="name1" class="input_r_a">
+          <input type="text" placeholder="Фамилия" name="name2" class="input_r_a">
+          <input type="email" placeholder="Почта" name="email1" class="input_r_a">
+          <input type="email" placeholder="Подтвердите почту" name="email2" class="input_r_a">
+          <input type="password" placeholder="Пароль" name="pass1" class="input_r_a">
+          <input type="password" placeholder="Подтвердите пароль" name="pass2" class="input_r_a">
+          <input type='tel' placeholder="Мобильный телефон" name="tel" class="input_r_a">
+          <input type="radio" checked name="radio1"> Мужчина <input type="radio" name="radio1" class="radio"> Женщина
+          <button class="btn_reg"> Регистрация </button>
+          <p><input type="checkbox" name="a" value=""> Соглашение на обработку личных данных</p>
+        </form>
+      </div>
+    </div>
+    <!-- <div id="window_auth_reg">
+      <img  class="close" src="img/interaction/close.png" alt="" onclick="scripts.js/show('none')">
+      <div class="form_reg_auth">
+          <a href="#">Вход</a>
+        <h2 class="hed_r_a">Регистрация</h2>
+        <form action="index.html" name="f1">
+          <input type="text" placeholder="Имя" name="name1" class="input_r_a">
+          <input type="text" placeholder="Фамилия" name="name2" class="input_r_a">
+          <input type="email" placeholder="Почта" name="email1" class="input_r_a">
+          <input type="email" placeholder="Подтвердите почту" name="email2" class="input_r_a">
+          <input type="password" placeholder="Пароль" name="pass1" class="input_r_a">
+          <input type="password" placeholder="Подтвердите пароль" name="pass2" class="input_r_a">
+          <input type='tel' placeholder="Мобильный телефон" name="tel" class="input_r_a">
+          <input type="radio" checked name="radio1"> Мужчина <input type="radio" name="radio1" class="radio"> Женщина
+          <button class="btn_reg"> Регистрация </button>
+          <p><input type="checkbox" name="a" value=""> Соглашение на обработку личных данных</p>
+        </form>
+      </div>
+    </div> -->
+    <!-- --------Форма регистрации/входа------- -->
+    <!--  ------Первый слайд----------------- -->
     <section>
       <div class="main">
         <div class="container content_down">
@@ -103,10 +144,10 @@
         <div class="main_mask"></div>
       </div>
     </section>
+    <!--  ------Первый слайд----------------- -->
 
 
-
-    <!-- ------------------Каталог-------------- -->
+    <!-- ------------------Второй слайд-------------- -->
   
     <section>
       <div class="container">
@@ -309,8 +350,8 @@
               
       </div>
     </section>
-
-  <!---------------------- Рекомендации -------------------------->
+    <!-- ------------------Второй слайд-------------- -->
+    <!-- ------------------Третий слайд-------------- -->
     <section>
       <div class="container">
         <div class="section_header">
@@ -412,7 +453,8 @@
           </div>
        </div>
       </section>
-
+      <!-- ------------------Третий слайд-------------- -->
+      <!-- ------------------Четвертый слайд-------------- -->
       <section>
         <div class="container">
           <div>
@@ -465,6 +507,7 @@
           </div>
         </div>
       </section>
+      <!-- ------------------Четвертый слайд-------------- -->
       <!--  ------Интерактивыне элементы----------------- -->
       <script src="js/scripts.js"></script>
       </div>

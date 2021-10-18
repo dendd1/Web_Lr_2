@@ -209,8 +209,94 @@ body::-webkit-scrollbar {
     width: 32px;
     height: 32px;
 }
-/* ------------Хедер-фиксир------------------- */
 
+/* ------------Хедер-фиксир------------------- */
+/* ------------Форма регистрации/входа------------------- */
+/* Маска окна рекистрации/входа */
+#gray_mask{
+	display: none;
+	background: rgba(1, 1, 1, 0.75);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10000;
+}
+/* Блок формы */
+#window_reg_auth {
+	display: none;
+	width: 350px;
+	height: 580px;
+	margin: 40px auto;
+	background: 141111;
+	border: 2px solid orange;
+	border-radius: 15px;
+	z-index: 10001;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 15%;
+	bottom: 0;
+	background: #141111;
+}
+/* Форма */
+.form_reg_auth{
+	width: 275px;
+	margin: -15px auto 20px;
+	text-align: center;
+}
+.hed_r_a{
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+/* Поля ввода */
+.input_r_a{
+	width: 260px;
+	padding: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	outline: none;
+	color: black;
+}
+.btn_reg{
+	display: inline;
+	position: relative;
+	border: 3px solid white;
+    padding: 8px 30px;
+    border-radius: 30px;
+	color: white;
+	background-color: rgba(255, 255, 255, 0);
+	transition:.2s linear,
+	color .2s linear;
+	margin-bottom: 10px;
+}
+.btn_reg:hover {
+	color: black;
+	background-color: orange;
+	border-color: orange;
+}
+/* Галки */
+.radio {
+	margin-bottom: 10px;
+}
+/* Кнопака закрытия */
+.close{
+	margin: 10px 0 0 320px;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 30px;
+	padding: 4px;
+	background: orange;
+
+}
+.close:hover{
+	/* border-radius: 0px; */
+	background: white;
+	border-color: orange;
+}
+
+/* ------------Форма регистрации/входа------------------- */
 
 
 
