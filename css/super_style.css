@@ -58,11 +58,14 @@ body::-webkit-scrollbar {
 .container {
 	width: 1600px;
 }
+.section_header {
+	width: 100%;
+	max-width: 950px;
+	margin: 0 auto 50px;
+	text-align: center;
+}
 .box{
 	width: 50%;
-}
-.third_box{
-	width: 30%;
 }
 /* Рамка карточки */
 .item {
@@ -70,7 +73,7 @@ body::-webkit-scrollbar {
 	display: inline-block;
 	border-color: white;
 	background-color: black;
-	border-radius: 5%;
+	border-radius: 20px;
   	overflow: hidden;
 	position: relative;
 	transition:.2s linear,
@@ -101,6 +104,7 @@ body::-webkit-scrollbar {
 	bottom: 0px;
 	position: absolute;
 	text-align: center;
+	height: 150px;
 }
 /* Текст на карточке */
 .item_text{
@@ -212,6 +216,10 @@ body::-webkit-scrollbar {
 
 /* ------------Первый слайд------------------- */
 /* бэк */
+.container_main{
+	height: 360px;
+	width: 220px;
+}
 .main{
 	background: url(../img/bg_posters/background.jpg) no-repeat;
 	background-size: cover;
@@ -246,6 +254,23 @@ body::-webkit-scrollbar {
 	width: 740px;
 	justify-content: space-between;
 }
+/* Крепление к низу карточки название фильма */
+.film_name_main{
+	bottom: 40px;
+}
+/* Крепление к низу карточки статистики фильма */
+.stat_main{
+	bottom: 20px;
+	display: flex;
+	left: 15%;
+	justify-content: space-between;
+	width: 70%;
+}
+.img_stat_mini {
+	width: 16px;
+	height: 16px;
+}
+/* Затемнение первого слайда */
 .main_mask {
 	width: 100%;
 	background-image: linear-gradient(rgb(20, 17,17, 0),
@@ -254,10 +279,215 @@ body::-webkit-scrollbar {
 	rgb(20, 17,17, 0.7), rgb(20, 17,17, 0.7),
 	rgb(20, 17,17, 0.8), rgb(20, 17,17, 0.9),
 	rgba(20, 17,17), rgba(20, 17,17));
-	bottom: 0px;
+	top: 88%;
 	position: absolute;
 	/* height: 20%; */
     height: 150px;
 }
-
 /* ------------Первый слайд------------------- */
+
+/* ------------Второй слайд------------------- */
+
+/* Кнопки с переключением */
+.item_btn.catalog_btn {
+	display: inline;
+	border-radius: 0;
+	border-color: transparent;
+	color: white;
+	background: transparent;
+	margin-left: 15px;
+	margin-right: 15px;
+	position: relative;
+	transform: none;
+}
+.item_btn.catalog_btn:hover{
+	color: orange;
+	cursor: pointer;
+}
+.item_btn.catalog_btn.catalog_btn_active{
+	border-color: orange;
+	border-radius: 10px;
+	background: rgb(255, 165 ,0, 0.3);
+}
+.item_btn.catalog_btn.catalog_btn_active:hover{
+	color: white;
+}
+.about {
+	width: 100%;
+	height: 520px;
+	overflow: auto;
+	margin-top: 80px;
+	/* display: flex; */
+	justify-content: space-between;
+	left: 50%;
+}
+/* Рамка карточки каталога */
+.catalog_container{
+	width: 300px;
+	height: 510px;
+}
+.catalog_mask{
+	height: 200px;
+}
+.film_name{
+	bottom: 70px;
+}
+.stat{
+	bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	left: 10%;
+}
+.picture_catalog {
+	width: 32px;
+	height: 32px;
+}
+.text_big {
+	font-size: 26px;
+}
+/* ------------Второй слайд------------------- */
+
+/* ------------Третий слайд------------------- */
+.gallery-block {
+	display: flex;
+}
+.gallery_content_box_big{
+	height: 450px;
+	position: relative;
+}
+.gallery_content_box_small{
+	height: 225px;
+	position: relative;
+}
+.gallery_content_box_small ,
+.gallery_content_box_big {
+	padding: 10px;
+}
+.img_recomend {
+	transition:.2s linear,
+	color .2s linear;
+	opacity: .75;
+}
+.gallery_content_box_small .img_recomend,
+.gallery_content_box_big .img_recomend{
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	border: 3px solid transparent;
+}
+.gallery_content_box_small:hover .img_recomend,
+.gallery_content_box_big:hover .img_recomend{
+	border: 3px solid orange;
+	border-radius: 30px;
+}
+
+.gallery_content_box_big:hover .item_btn,
+.gallery_content_box_small:hover .item_btn{
+	display: inline-block;
+}
+.item_btn.poster_btn_recomend {
+	left: 85%;
+    transform: translate(-50%, 0);
+    bottom: 10%;
+	transition:.2s linear,
+	color .2s linear;
+}
+.item_mask_recomend {
+	width: 100%;
+	bottom: 0px;
+	position: absolute;
+	text-align: center;
+}
+.item_text.film_name_recomend {
+	bottom: 70px;
+    left: 5%;
+	width: auto;
+	font-size: 36px;
+}
+.item_text.stat_recomend {
+	bottom: 20px;
+    left: 5%;
+	width: auto;
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+.picture_recomend {
+	width: 48px;
+	height: 48px;
+} 
+.text_very_but_not_big{
+	font-size: 38px;
+}
+/* ------------Третий слайд------------------- */
+
+
+/* ------------Четвертый слайд------------------- */
+.blog_theme_text{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.blog_box{
+	display: flex;
+	justify-content: space-between;
+}
+.third_box{
+	width: 30%;
+}
+.blog_img{
+	width: 480px;
+	height: 240px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.blog_text{
+	text-align: justify;
+}
+.third_box > .blog_img{
+	border: 3px solid transparent;
+}
+
+.third_box:hover > .blog_img{
+	border: 3px solid orange;
+}
+
+.third_box:hover > p{
+	color: orange;
+}
+.reaction_blog {
+	top: 10px;
+	display: flex;
+	justify-content: space-between;
+	width: 55%;
+}
+.blog_btn{
+	display: flex;
+	justify-content: center;
+}
+
+.blog_btn a{
+	padding: 10px 8px;
+	background: orange;
+	border-radius: 13px;
+}
+
+.blog_btn p{
+	color: #141111;
+}
+
+.blog_btn a:hover{
+	background: white;
+}
+/* ------------Четвертый слайд------------------- */
+
+/* --------------------Адаптив------------------------- */
+@media screen and (max-width: 1200px){
+	.gallery-block {
+		display: inline;
+	}
+	.box {
+		width: 100%;
+		margin: 0;
+	}
+}
