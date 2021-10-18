@@ -994,7 +994,7 @@ body::-webkit-scrollbar {
 }
 @media (max-width: 820px) {
 	.container.content_down{
-		margin-left: 5%;
+		display: none;
 	}
 	.header_f{
 		display: none;
