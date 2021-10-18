@@ -54,6 +54,20 @@ function show_auth(state)
 
 jQuery(document).ready(function($) {
       $('#scroll').lightSlider({
+            auto:true,
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+            } 
+        }); 
+        
+});
+
+
+jQuery(document).ready(function($) {
+      $('#autoWidth').lightSlider({
+            
             autoWidth:true,
             loop:true,
             onSliderLoad: function() {
