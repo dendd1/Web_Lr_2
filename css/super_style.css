@@ -1155,6 +1155,6 @@ body::-webkit-scrollbar {
 
 @media (max-height: 575px) {
 	#window_reg_auth{
-		position: relative;
+		position: absolute;
 	}
 }
