@@ -76,5 +76,18 @@ jQuery(document).ready(function($) {
         }); 
         
 });
+
+
+jQuery(document).ready(function($) {
+      $('#laptop_scroll').lightSlider({
+            auto:true,
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+            } 
+        }); 
+        
+});
 // 1
 
