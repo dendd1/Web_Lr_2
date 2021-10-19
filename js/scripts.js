@@ -50,6 +50,12 @@ function show_auth(state)
       document.getElementById('gray_mask').style.display = state; 		
 }
 
+function show_laptop_menu(state)
+{
+      document.getElementById('header_laptop_menu').style.display = state;	
+      document.getElementById('gray_mask').style.display = state; 		
+}
+
 
 
 jQuery(document).ready(function($) {

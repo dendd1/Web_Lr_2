@@ -40,12 +40,23 @@
         <div class="header_f_inner">
             <img class="logo_img" src="img/interaction/logo.png" alt="">
             <input class="header_input" value="" >
-            <button class="btn_header" >	&#926;</button>
+            <button onclick="scripts.js/show_laptop_menu('block')" class="btn_header" >	&#926;</button>
         </div>
       </div>
     </header>
+     <!-- -------------laptop block menu ------------ -->
+    <header id="header_laptop_menu">
+      <div class="container head">
+        <div class="header_f_inner laptop">
+          <button class="btn_header" >Каталог фильмов</button>
+          <button onclick="scripts.js/show_laptop_menu('none'), scripts.js/show('block')" class="btn_header" >Войти</button> 
+          <button class="btn_header" >Контакты</button> 
+        </div>
+      </div>
+    </header>
+    <!-- -------------laptop block menu ------------ -->
     <!-- ----------laptop menu----------- -->
-    <div id="gray_mask" onclick="scripts.js/show('none'), scripts.js/show_auth('none')"></div>
+    <div id="gray_mask" onclick="scripts.js/show('none'), scripts.js/show_auth('none'), scripts.js/show_laptop_menu('none')"></div>
     <!-- --------Форма регистрации/входа------- -->
     <div id="window_reg_auth">
       <img  class="close" src="img/interaction/close.png" alt="" onclick="scripts.js/show('none')">

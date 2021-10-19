@@ -237,7 +237,21 @@ body::-webkit-scrollbar {
 
 
 /* ------------Меню телефона------------------- */
-
+/* ------------Меню блок телефона------------------- */
+#header_laptop_menu{
+	display: none;
+	width: 100%;
+	padding-top: 0px;
+	position: fixed;
+	top: 150px;
+	z-index: 10005;
+	position: fixed;
+}
+.header_f_inner.laptop{
+	display: flex;
+	justify-content: center;
+}
+/* ------------Меню блок телефона------------------- */
 
 
 /* ------------Хедер-фиксир------------------- */
@@ -266,9 +280,10 @@ body::-webkit-scrollbar {
 	position: fixed;
 	left: 0;
 	right: 0;
-	top: 15%;
+	top: 5%;
 	bottom: 0;
 	background: #141111;
+	overflow-y: auto;
 }
 #window_auth_reg {
 	display: none;
@@ -282,7 +297,7 @@ body::-webkit-scrollbar {
 	position: fixed;
 	left: 0;
 	right: 0;
-	top: 15%;
+	top: 5%;
 	bottom: 0;
 	background: #141111;
 }
@@ -1107,5 +1122,39 @@ body::-webkit-scrollbar {
 	}
 	.laptop_scroll {
 		width: 155px;
+	}
+}
+
+@media (max-width: 355px) {
+	#window_reg_auth {
+		width: 305px;
+	}
+	#window_auth_reg {
+		width: 305px;
+	}
+	.close {
+		margin: 10px 0 0 275px;
+	}
+}
+@media (max-width: 410px) {
+	.header_f_inner.laptop{
+		display: block;
+	}
+}
+
+
+@media (max-height: 620px) {
+	#window_reg_auth{
+		top: -5%;
+	}
+	#window_auth_reg{
+		top: -5%;
+	}
+}
+
+
+@media (max-height: 575px) {
+	#window_reg_auth{
+		position: relative;
 	}
 }
