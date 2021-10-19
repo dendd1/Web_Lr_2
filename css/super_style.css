@@ -1096,3 +1096,16 @@ body::-webkit-scrollbar {
 		top: 92%;
 	}
 }
+
+@media screen and  (max-height: 390px) {
+	.help_box{
+		height: 5px;
+	}
+	.container_main{
+		height: 290px;
+    	width: 150px;
+	}
+	.laptop_scroll {
+		width: 155px;
+	}
+}
