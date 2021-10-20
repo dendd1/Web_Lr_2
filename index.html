@@ -64,16 +64,16 @@
           <a class="second_choise" href="#" onclick="scripts.js/show('none'), scripts.js/show_auth('block')">Вход</a>
         <h2 class="hed_r_a">&#8594;Регистрация &#8592;</h2>
         <form action="index.html" name="f1">
-          <input type="text" placeholder="Имя" name="name1" class="input_r_a">
-          <input type="text" placeholder="Фамилия" name="name2" class="input_r_a">
-          <input type="email" placeholder="Почта" name="email1" class="input_r_a">
-          <input type="email" placeholder="Подтвердите почту" name="email2" class="input_r_a">
-          <input type="password" placeholder="Пароль" name="pass1" class="input_r_a">
-          <input type="password" placeholder="Подтвердите пароль" name="pass2" class="input_r_a">
-          <input type='tel' placeholder="Мобильный телефон" name="tel" class="input_r_a">
-          <input type="radio" checked name="radio1"> Мужчина <input type="radio" name="radio1" class="radio"> Женщина
-          <button class="btn_reg"> Зарегестрироваться </button>
-          <p><input type="checkbox" name="a" value=""> Соглашение на обработку личных данных</p>
+          <input type="text" placeholder="Имя" id="name1" class="input_r_a">
+          <input type="text" placeholder="Фамилия" id="name2" class="input_r_a">          
+          <input type="email" placeholder="Почта (sample@mail.ru)" id="email1" class="input_r_a">
+          <input type="email" placeholder="Подтвердите почту" id="email2" class="input_r_a">
+          <input type="password" placeholder="Пароль" id="pass1" class="input_r_a">
+          <input type="password" placeholder="Подтвердите пароль" id="pass2" class="input_r_a">
+          <input type='tel' placeholder="Мобильный телефон" id="tel" class="input_r_a">
+          <input type="radio" checked name="radio1" id="radio1"> Мужчина <input type="radio" name="radio1" id="radio2" class="radio"> Женщина
+          <a onclick="scripts.js/info_out()" class="btn_reg" href="#">Зарегестрироваться</a>
+          <p><input type="checkbox" id="chbox" value=""> Соглашение на обработку личных данных</p>
         </form>
       </div>
     </div>
@@ -86,7 +86,8 @@
           <input type="email" placeholder="Почта" name="email1" class="input_r_a">
 
           <input type="password" placeholder="Пароль" name="pass1" class="input_r_a">
-          <button class="btn_reg"> Войти </button>
+          <div class="help_box_2"></div>
+          <a  class="btn_reg " href="account.html"> Войти </a>
         </form>
       </div>
     </div>

@@ -283,7 +283,6 @@ body::-webkit-scrollbar {
 	top: 5%;
 	bottom: 0;
 	background: #141111;
-	overflow-y: auto;
 }
 #window_auth_reg {
 	display: none;
@@ -311,6 +310,7 @@ body::-webkit-scrollbar {
 	margin-bottom: 10px;
 	font-size: 30px;
 }
+
 /* Поля ввода */
 .input_r_a{
 	width: 260px;
@@ -319,7 +319,22 @@ body::-webkit-scrollbar {
 	border-radius: 5px;
 	outline: none;
 	color: black;
+	text-transform: none;
+	
 }
+.help_box_2{
+	background: rgba(0, 0, 0, 0);
+	height: 20px;
+}
+.input_r_a::placeholder {
+	transition: 0.5s; /* Время трансформации */
+	color: #aaa; /* Цвет подсказки */
+}
+
+.input_r_a:focus::placeholder { 
+	transform: translateX(300px); /* Сдвигаем вверх */
+}
+
 .btn_reg{
 	display: inline;
 	position: relative;
@@ -339,7 +354,10 @@ body::-webkit-scrollbar {
 }
 /* Галки */
 .radio {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+}
+#chbox{
+	margin-top: 30px;;
 }
 /* Кнопака закрытия */
 .close{
